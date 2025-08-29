@@ -4,7 +4,6 @@ import Header from "./components/header/header.jsx";
 
 function HomePage() {
   const [count, setCount] = useState(0);
-
   return (
     <div className="bg-blue-300">
       <Header />

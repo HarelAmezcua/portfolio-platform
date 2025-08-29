@@ -1,7 +1,9 @@
 from fastapi import FastAPI
+import asyncio
 
 app = FastAPI()
 
 @app.get("/hi")
-def greet():
+async def greet():
+    await asyncio.sleep(1)
     return "Hola Mundo"
